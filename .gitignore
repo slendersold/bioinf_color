@@ -5,6 +5,7 @@
 *.tsv
 *.png
 calibration_data/
+histogram_deprecated.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

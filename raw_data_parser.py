@@ -27,7 +27,7 @@ class raw_data_parser:
                    -1] == wl_max, "passed max value of wavelength does not match csv stored at passed base path"
         assert wvl_df.Wavelength.diff().mode().item() == wl_step, "passed step value of wavelengths does not match csv stored at passed base path"
 
-        chart_sd = wvl_df.set_index('Wavelength').drop(['CA'], axis=1)
+        chart_sd = wvl_df.set_index('Wavelength')
 
         return (chart_sd.columns.to_list(),
                 MultiSpectralDistributions(chart_sd.to_numpy(),
