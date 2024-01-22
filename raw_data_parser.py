@@ -9,7 +9,6 @@ from colour.models.rgb import RGB_COLOURSPACES, XYZ_to_RGB
 
 default_colref_basepath = '.'
 
-
 class raw_data_parser:
     def __init__(self, reference_basepath='./calibration_data/', wl_min=340, wl_max=830, wl_step=5):
         self.reference_basepath = reference_basepath
